@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+
+  <h1>Faça sua cotação</h1>
+
+  <label for="valor">Informe o valor:</label>
+  <input type="number" id="valor" min="0" placeholder="Valor" />
+  <p id="erro" class="text_error">O valor deve ser maior que zero!</p>
+
+  <p>De:</p>
+  <select id="moeda_atual">
+    <option value=-'1' selected disabled>Selecione a moeda</option>
+    <!-- <option value="BRL">REAL - BRL</option>
+    <option value="USD">DÓLAR - USD</option>
+    <option value="EUR">EURO - EUR </option> -->
+  </select>
+  
+  <div class="swap">
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 48 960 960" width="48"><path d="M322 606V290L202 410l-42-42 193-193 193 193-42 42-122-121v317h-60Zm285 369L414 781l42-41 120 120V544h60v317l122-121 42 42-193 193Z"/></svg>
+  </div>
+
+  <p>Para:</p>
+  <select id="moeda_cotada">
+    <option value='-1' selected disabled>Selecione a moeda</option>
+    <!-- <option value="BRL">REAL - BRL</option>
+    <option value="USD">DÓLAR - USD</option>
+    <option value="EUR">EURO - EUR </option> -->
+  </select>
+
+  <button id="cotar">Realizar Cotação</button>
+
+  <p>Resultado: <span id="resultado"></span></p>
+
+  <p id="horario"></p>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

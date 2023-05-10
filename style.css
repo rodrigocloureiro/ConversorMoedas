@@ -1,0 +1,97 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccff00;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+input {
+  font-size: 22px;
+}
+
+input,
+select {
+  width: calc(100%);
+  background: transparent;
+  border: 2px solid #1a73e8;
+  padding: 5px 10px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+label {
+  font-size: 22px;
+}
+
+select {
+  font-size: 1em;
+}
+
+p {
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#resultado {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.error {
+  border: 2px solid #ff0000;
+}
+
+.error:focus {
+  outline: none;
+}
+
+.swap {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.swap svg {
+  cursor: pointer;
+}
+
+.swap svg:hover {
+  fill: #1a73e8;
+}
+
+.text_error {
+  color: #ff0000;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 65px;
+}
+
+.show_error {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+  /* top: 89px; */
+  top: 134px;
+}
